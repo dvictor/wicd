@@ -305,7 +305,7 @@ if options.wireless and options.list_encryption_types:
 if options.save and options.network > -1:
     if options.wireless:
         is_valid_wireless_network_id(options.network)
-        config.SaveWirelessNetworkProfile(options.network)
+        wireless.SaveWirelessNetworkProfile(options.network)
     elif options.wired:
         config.SaveWiredNetworkProfile(options.name)
     op_performed = True
